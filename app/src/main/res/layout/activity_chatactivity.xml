@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatactivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatrecycler"
+        android:layout_above="@+id/linearlayout"
+        android:background="@color/lighter_lavender"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Type a message"
+            android:layout_weight="50"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/message_layout"
+            android:id="@+id/messagebox"/>
+        <ImageView
+            android:id="@+id/sendimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/baseline_send_24"
+            android:layout_weight="20"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
